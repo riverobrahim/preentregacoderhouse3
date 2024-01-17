@@ -1,0 +1,15 @@
+{% extends 'Coder/base.html'%}
+
+{% block contenido %}
+    {% for vendedor in vendedores %}
+        <ul>
+            <li>
+                {{ vendedor.nombre}}
+                {{ vendedor.email}}
+
+            </li>
+        </ul>
+
+    {% endfor %}
+    
+{% endblock contenido %}
